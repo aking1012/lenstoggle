@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 28 Apr 2012 13:51:47 -0400
+Source: lenstoggle
+Binary: python-lenstoggle
+Architecture: source all
+Version: 0.1-1
+Distribution: precise
+Urgency: low
+Maintainer: Andrew King (No comment) <aking1012.com@gmail.com>
+Changed-By: Andrew King (No comment) <aking1012.com@gmail.com>
+Description: 
+ python-lenstoggle - Simple App to Toggle Lenses.
+Changes: 
+ lenstoggle (0.1-1) precise; urgency=low
+ .
+   * source package automatically created by stdeb 0.6.0+git
+Checksums-Sha1: 
+ ef7b5601094924358c2b111d0db009ad1940b8ac 1397 lenstoggle_0.1-1.dsc
+ 6ba2a427805b9496440e3e523362a5a1615dcdcf 2787 lenstoggle_0.1.orig.tar.gz
+ ab14ef1cb5f8bfeb61d563158196a2f00bd0b4f3 1933 lenstoggle_0.1-1.debian.tar.gz
+ 6e9ca020d00cf425f6315db121d07e3376016b1c 4698 python-lenstoggle_0.1-1_all.deb
+Checksums-Sha256: 
+ 248924d8ef3a718fa006a1426001755db3dfce00cded43aa75932f446ff288c2 1397 lenstoggle_0.1-1.dsc
+ 77cc16c58e932e4b5e9e05d36f2d31f4adae9b643b69e85e16914869d9dbf411 2787 lenstoggle_0.1.orig.tar.gz
+ 118accc8eb219983104cf1aeaa062512322a10f2bd4306bf27186510c3a20f7b 1933 lenstoggle_0.1-1.debian.tar.gz
+ efa49f2005885abd5018473bff095ef6fc432771425e1725c2ea0615beeea657 4698 python-lenstoggle_0.1-1_all.deb
+Files: 
+ 2ff011e9c696cf59f296d721607315d4 1397 python optional lenstoggle_0.1-1.dsc
+ 31ec3eabb8ba170665335a5413d21557 2787 python optional lenstoggle_0.1.orig.tar.gz
+ 5b4557b9ef2e654310dec43d230fda2f 1933 python optional lenstoggle_0.1-1.debian.tar.gz
+ a23462ce4d76a2a4312313a616070d68 4698 python optional python-lenstoggle_0.1-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJPnDG2AAoJEODCXbnlo0CHRZgIAKOZB0vN72Jljt10t5uzaPv+
+tghr0JYIJtmpTdQddTOmSQsRhU2f61xP0nh4L/VyS21wXdNg69Rx68Z4EBivztW3
+7ieyHOcVhGQWPBMMUM0zHwM0O/677Y4z6O1zAE8CWMVLP7h4+V+rlar/zLH4hlpe
+bupONOok7rgYMo6RKCwmR+DJv+/W0omtCxUKM2olHOKZVE2z74W94w1R9PCNX+nC
+6isfDb+Po1SVHVn5exdeXlIkfQhaI796D67h/wsqxd5MVS8A1RrdHsu+hlsbw5rS
+EAmLtt5kST0f2k7Po8s3+poTHgWHep5NrLXEWDol21AqoX0gFYR3zVwshyl8JH8=
+=Joyp
+-----END PGP SIGNATURE-----

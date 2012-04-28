@@ -1,0 +1,12 @@
+Source: lenstoggle
+Maintainer: Andrew King (No comment) <aking1012.com@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.1
+
+Package: python-lenstoggle
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Simple App to Toggle Lenses.
+ Simple App to Toggle Lenses.  I did not like that unity --replace & moved my screenlets around, so I took that part out.  Just log out and log in.  
