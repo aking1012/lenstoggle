@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/bin/env gksu python /usr/share/pyshared/LensToggle/lenstoggle.py
