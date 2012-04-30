@@ -2,36 +2,36 @@
 Hash: SHA1
 
 Format: 1.8
-Date: Sat, 28 Apr 2012 13:51:47 -0400
+Date: Mon, 30 Apr 2012 00:16:27 -0400
 Source: lenstoggle
 Binary: python-lenstoggle
 Architecture: all
 Version: 0.1-1
-Distribution: precise
+Distribution: unstable
 Urgency: low
 Maintainer: Andrew King (No comment) <aking1012.com@gmail.com>
 Changed-By: Andrew King (No comment) <aking1012.com@gmail.com>
 Description: 
  python-lenstoggle - Simple App to Toggle Lenses.
 Changes: 
- lenstoggle (0.1-1) precise; urgency=low
+ lenstoggle (0.1-1) unstable; urgency=low
  .
    * source package automatically created by stdeb 0.6.0+git
 Checksums-Sha1: 
- 09a330f84ab3cfe976e1d95a46dced02dbdebdfe 6896 python-lenstoggle_0.1-1_all.deb
+ 70995cce22545937763e29d205021e2225880036 6884 python-lenstoggle_0.1-1_all.deb
 Checksums-Sha256: 
- 2e367a7ffb931146c7d1a2e6361ffcee5aafacec0e767c88957e74e405165d05 6896 python-lenstoggle_0.1-1_all.deb
+ 0925c0b2cfd345f7c8d6f15dc7b29364f69669f4d5481d2f4fd74fb4cdb7d046 6884 python-lenstoggle_0.1-1_all.deb
 Files: 
- 469a5369e4026f01e95e4d19201f7d64 6896 python optional python-lenstoggle_0.1-1_all.deb
+ 66133159bb279d1993e864b9dd56f544 6884 python optional python-lenstoggle_0.1-1_all.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQEcBAEBAgAGBQJPngftAAoJEODCXbnlo0CHvFEH/2/sXNCKeMUrY42BpfFDU18B
-hU9EfEZ2KcXhizAaF2/E1flsV8eGdgg1fWCV/x0lvI3W7sf7a4Xz3Jp4iUwH2LHV
-5dilrZzt++8EoLIXECja+w7o6spEXtJoQO1gT12nKIRxwRQaQMSShdmWkY/RX7ML
-EVrEKvn2kZwwza0wa46um5nybM+XsdawvgPhahMnvm/RCcmVQt/G/erP0KI09dri
-HbU9ygSrxa832HGWwE1d0WM9eB7U+29I6cW5E5q7rx8n8AeWPqVcLWe2/yPmjlUU
-KlqQuWNoKZ87E6t7q6+BJgv9iKFXfWk1UifrF5yRoiSAL7AN84GwjtqGPF9o0pY=
-=TAxM
+iQEcBAEBAgAGBQJPnhNcAAoJEODCXbnlo0CHCNMH/3A8GMLbUAUd1hyozzMPjg9G
+p6lxY26MWH/8/4VWK4Xs16TLKACovsCWs2P/62HJ7WejkK4Joh5/2oP3Pr1vOF8E
+WSwWlB9uAIUxthKV0LLtZuNOmEQ86EuQxXVJgBp1TPBL39rqvF3o2LzHzoQpoVod
+1p3De6w0+TeFoyj3Kbl6BXMBhJMiLylyZyYY8EO0fqYtPmBX6zFfdtjeR3cZrjNf
+B1xNqxHKJurQAROXpltk2WjCudqSX9dW9wJZj57EWry4KiSNhJWL48po9I+dlCie
+vv3aU3znMjJQJIcp4oxUgUz3yvk/VoVF+kSOritGnHIIUEzyUyb8XCl70aHrTUA=
+=5TUT
 -----END PGP SIGNATURE-----

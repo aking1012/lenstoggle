@@ -13,9 +13,10 @@ dh clean --with python2 --buildsystem=python_distutils
    dh_testdir -O--buildsystem=python_distutils
    dh_auto_clean -O--buildsystem=python_distutils
 running clean
-'build/lib.linux-x86_64-2.7' does not exist -- can't clean it
+removing 'build/lib.linux-x86_64-2.7' (and everything under it)
 'build/bdist.linux-x86_64' does not exist -- can't clean it
 'build/scripts-2.7' does not exist -- can't clean it
+removing 'build'
    dh_clean -O--buildsystem=python_distutils
  dpkg-source -b LensToggle
 dpkg-source: info: using source format `3.0 (quilt)'
@@ -25,19 +26,8 @@ dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/requires.txt
 dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/PKG-INFO
 dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/dependency_links.txt
 dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/SOURCES.txt
-dpkg-source: info: building lenstoggle in lenstoggle_0.1-1.debian.tar.gz
-dpkg-source: info: building lenstoggle in lenstoggle_0.1-1.dsc
- dpkg-genchanges -S >../lenstoggle_0.1-1_source.changes
-dpkg-genchanges: including full source code in upload
- dpkg-source --after-build LensToggle
-dpkg-buildpackage: full upload (original source is included)
-Now running lintian...
-W: lenstoggle source: no-debian-copyright
-W: lenstoggle source: out-of-date-standards-version 3.9.1 (current is 3.9.3)
-Finished running lintian.
-Now signing changes and any dsc files...
- signfile lenstoggle_0.1-1.dsc Andrew King (No comment) <aking1012.com@gmail.com>
-
- signfile lenstoggle_0.1-1_source.changes Andrew King (No comment) <aking1012.com@gmail.com>
-
-Successfully signed dsc and changes files
+dpkg-source: info: local changes detected, the modified files are:
+ LensToggle/usr/share/applications/lenstoggle.desktop
+dpkg-source: error: aborting due to unexpected upstream changes, see /tmp/lenstoggle_0.1-1.diff.BDLfB1
+dpkg-source: info: you can integrate the local changes with dpkg-source --commit
+dpkg-buildpackage: error: dpkg-source -b LensToggle gave error exit status 2

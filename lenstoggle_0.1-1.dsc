@@ -13,22 +13,22 @@ Package-List:
  python-lenstoggle deb python optional
 Checksums-Sha1: 
  7182b295cd5c154e9c226f880e2b5dcb1baf519b 8200 lenstoggle_0.1.orig.tar.gz
- eab5a056881693f1daad6283d8f5464db1100983 3777 lenstoggle_0.1-1.debian.tar.gz
+ 8cd89fc626577f9df8d780ee16721dca4c6c1b7f 3779 lenstoggle_0.1-1.debian.tar.gz
 Checksums-Sha256: 
  c043602482bbce68d85afc08c52acec3f1f235a54730aad02d2750147827d47b 8200 lenstoggle_0.1.orig.tar.gz
- 9c1b6e6ff6494f47666f7246208d4d6440be5287815ffe78b99495a19e1eb00b 3777 lenstoggle_0.1-1.debian.tar.gz
+ 746499a6808d4c7a81da43067f4e7b0d0a3bc4c53a24874b2f586069a946e172 3779 lenstoggle_0.1-1.debian.tar.gz
 Files: 
  bfcd9b48d95f559a24b8d3be1cc4a5b8 8200 lenstoggle_0.1.orig.tar.gz
- fa51b63ff614daaab7e21081e24d613d 3777 lenstoggle_0.1-1.debian.tar.gz
+ 99d9dfe05f93a61b2849ca2b96f67f15 3779 lenstoggle_0.1-1.debian.tar.gz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQEcBAEBAgAGBQJPnf9vAAoJEODCXbnlo0CH0b0IANFnjbhFwDXJmsofU3UbnZBa
-wo82SKHPWmqbaJxmtXpErgcpwTeb7e3ZFT9xSlDyRgPONHpoIqX9h5lhdeMKyr5N
-9VIRyW8D32d/pFXjXOf76EBQZ0LelCI56CWdc2AB5sibBYg3Er5s5Z21/Xlc8PFS
-qeqN2oQJYZk/lE2OFSMwFHjOeFiFAtiUO8E2UChi+t644iFcIZoCWN2xKpcF8d8S
-zU8cRoYLiTnw7VYaI8zD8JmdChXwHsyGbOGv1N4hvJ+qU1eWIhsAHu3LdfNg6Vgu
-dUST1NUrh9ymFSeUQnIUL1KsmKACXSGkkXGjYv7UZ6Km5SpC7Vfgw1aZQ5EkHfQ=
-=M2XC
+iQEcBAEBAgAGBQJPng86AAoJEODCXbnlo0CH2pMIAIUJr0mYR0p9z2jOyoJoaWQ9
+qrXCp1J20N/bXsT/CEMl33W+rxLHYkVewD4PfQ/jShZOvay2fmXVyZ3/b9lNQq68
+KsipQiWNcmbWKXPjNOK7VnRS+AcXjuKeVeJ55hju5VTRrSrf/ONMGNy5xI8MQzSO
+nKoqZGQSVfqqZzyV7CHpyBvLxmCx/ETeK2GGlxuBHC8jenk94GAS3UUgr8KQyGS4
+u0xBzaeHLUJ+eQc+JN0KhV5smPtU5dCH4deyVR/3eSWkImjrebypRSLfLnu6joFF
+AHV/Z/ljDSOEFJJ8AUKoloDQPEQaoQYuD5veeM9cLhh44T6hHujm481yhNgWkvk=
+=P/TW
 -----END PGP SIGNATURE-----

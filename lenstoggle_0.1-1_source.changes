@@ -18,26 +18,26 @@ Changes:
  .
    * source package automatically created by stdeb 0.6.0+git
 Checksums-Sha1: 
- 5e8d5741560307e4f600695d4496b0d6a094368e 1397 lenstoggle_0.1-1.dsc
+ 51bb885f59be4bb42cd8f837139875b64e0611ff 1397 lenstoggle_0.1-1.dsc
  7182b295cd5c154e9c226f880e2b5dcb1baf519b 8200 lenstoggle_0.1.orig.tar.gz
- eab5a056881693f1daad6283d8f5464db1100983 3777 lenstoggle_0.1-1.debian.tar.gz
+ 8cd89fc626577f9df8d780ee16721dca4c6c1b7f 3779 lenstoggle_0.1-1.debian.tar.gz
 Checksums-Sha256: 
- e04d04825686adde0276f02358796181af82320e8c5824a020441f3e244b0549 1397 lenstoggle_0.1-1.dsc
+ 472d1793b4af99300af2403b590654274b37a83e753f8551ee47fe45bd34381d 1397 lenstoggle_0.1-1.dsc
  c043602482bbce68d85afc08c52acec3f1f235a54730aad02d2750147827d47b 8200 lenstoggle_0.1.orig.tar.gz
- 9c1b6e6ff6494f47666f7246208d4d6440be5287815ffe78b99495a19e1eb00b 3777 lenstoggle_0.1-1.debian.tar.gz
+ 746499a6808d4c7a81da43067f4e7b0d0a3bc4c53a24874b2f586069a946e172 3779 lenstoggle_0.1-1.debian.tar.gz
 Files: 
- 136d7e4cc8670cc0d0087d459b491f19 1397 python optional lenstoggle_0.1-1.dsc
+ a91cc90f4199dff62673ca1645a07b6d 1397 python optional lenstoggle_0.1-1.dsc
  bfcd9b48d95f559a24b8d3be1cc4a5b8 8200 python optional lenstoggle_0.1.orig.tar.gz
- fa51b63ff614daaab7e21081e24d613d 3777 python optional lenstoggle_0.1-1.debian.tar.gz
+ 99d9dfe05f93a61b2849ca2b96f67f15 3779 python optional lenstoggle_0.1-1.debian.tar.gz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQEcBAEBAgAGBQJPnf9vAAoJEODCXbnlo0CHl/cIAI5UDo2k10N8ffXa9VF4t+VA
-xpiJrGQvRz/coheu6sSo2dT2ekIt9uSmGMKwJZWWM5ndfVSGYG70qQUUZZ9VzTGn
-+nSZ8IEnNgafEudLYDH65VV5PIwBddT08hzJjc1RqvR2G0zDMnWCcmr9FxZPMJ3g
-yhHJcAArHypAKO5KvKvxaDmRMqxaYmB1jQCn2spqg5EuR5YZkGJmTKgQ/6KZd07J
-wRPYKJMsgNStil7JyPBHXo1dtEjl/rMW0gtmYB+Lwo6yRCQRuP6YAM9zWhxoAOsr
-WJFqtyTRkZ7oV9O1Wbq/Cal0m1oddjdX9nTHf/kO65kuMUJ7seJXsglcQxX6aOQ=
-=ZpkM
+iQEcBAEBAgAGBQJPng86AAoJEODCXbnlo0CH/TgH/Ru5E+StlKzwGXNnpdP01lHy
+NvfjanKrNI73JoMX73AtAFORtptGZydjAxSduUpNneaN9LLggLkEP5AIOZF4sjPF
+8PhchMYnXv8ZY+3WOmGphbkT8buVal7/v747Q5cEyfEvfhUEEYmd23PZlJPVVURX
+u0STk0PUKZEGNvgk/wXPg30TqRx6iA/cvz9ka4UE4xMIZazFatLrH1KhyMiW4RxY
+l5gn6JkYds6nPfdxE3FbiLab0fl70vFKSNjdiSK+D0hiwtTkD8mJGSryNZFLvYzA
+cXecDRFE0FG2+tCa92k7/ldjY/Fz9fAVBdDa5h+tAaQC0ngC0WOHhA91WVGsK04=
+=EdNb
 -----END PGP SIGNATURE-----

@@ -14,9 +14,10 @@ dh clean --with python2 --buildsystem=python_distutils
    dh_testdir -O--buildsystem=python_distutils
    dh_auto_clean -O--buildsystem=python_distutils
 running clean
-'build/lib.linux-x86_64-2.7' does not exist -- can't clean it
+removing 'build/lib.linux-x86_64-2.7' (and everything under it)
 'build/bdist.linux-x86_64' does not exist -- can't clean it
 'build/scripts-2.7' does not exist -- can't clean it
+removing 'build'
    dh_clean -O--buildsystem=python_distutils
  debian/rules build
 dh build --with python2 --buildsystem=python_distutils
@@ -29,7 +30,7 @@ creating build
 creating build/lib.linux-x86_64-2.7
 creating build/lib.linux-x86_64-2.7/LensToggle
 copying LensToggle/__init__.py -> build/lib.linux-x86_64-2.7/LensToggle
-copying LensToggle/Toggler.py -> build/lib.linux-x86_64-2.7/LensToggle
+copying LensToggle/lenstoggle.py -> build/lib.linux-x86_64-2.7/LensToggle
    dh_auto_test -O--buildsystem=python_distutils
  fakeroot debian/rules binary
 dh binary --with python2 --buildsystem=python_distutils
@@ -47,7 +48,7 @@ creating /home/bildr/workspace/LensToggle/LensToggle/debian/python-lenstoggle/us
 creating /home/bildr/workspace/LensToggle/LensToggle/debian/python-lenstoggle/usr/lib/python2.7/dist-packages
 creating /home/bildr/workspace/LensToggle/LensToggle/debian/python-lenstoggle/usr/lib/python2.7/dist-packages/LensToggle
 copying build/lib.linux-x86_64-2.7/LensToggle/__init__.py -> /home/bildr/workspace/LensToggle/LensToggle/debian/python-lenstoggle/usr/lib/python2.7/dist-packages/LensToggle
-copying build/lib.linux-x86_64-2.7/LensToggle/Toggler.py -> /home/bildr/workspace/LensToggle/LensToggle/debian/python-lenstoggle/usr/lib/python2.7/dist-packages/LensToggle
+copying build/lib.linux-x86_64-2.7/LensToggle/lenstoggle.py -> /home/bildr/workspace/LensToggle/LensToggle/debian/python-lenstoggle/usr/lib/python2.7/dist-packages/LensToggle
 running install_egg_info
 running egg_info
 writing requirements to LensToggle.egg-info/requires.txt

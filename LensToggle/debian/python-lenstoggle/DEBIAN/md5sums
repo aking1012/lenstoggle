@@ -1,11 +1,11 @@
-d9ca2ed484adfe6088c9574bdfc97969  usr/bin/lenstoggle
-7e03ff191b7f1d6aa8ceb79399fd11ef  usr/share/applications/lenstoggle.desktop
-2e5fcc832525a3324e8308d4b8c21067  usr/share/doc/python-lenstoggle/changelog.Debian.gz
+fcf98fb20afc13246520747eac0cd7f4  usr/bin/lenstoggle
+5135dff03e988b445d314bbceeb30478  usr/share/applications/lenstoggle.desktop
+603ecacc6c788fe5d169883ee46595ab  usr/share/doc/python-lenstoggle/changelog.Debian.gz
 6a6d380aba119333cd9b35e978d4e43d  usr/share/pixmaps/lenstoggle.xpm
 96c81760c386f80efc75ea671fc98a98  usr/share/pyshared/LensToggle-0.1.egg-info/PKG-INFO
-209596cd38b1da3157d3c4f60e06b75c  usr/share/pyshared/LensToggle-0.1.egg-info/SOURCES.txt
+13f1664a76ca6ac8d6450210e25dbb1f  usr/share/pyshared/LensToggle-0.1.egg-info/SOURCES.txt
 68b329da9893e34099c7d8ad5cb9c940  usr/share/pyshared/LensToggle-0.1.egg-info/dependency_links.txt
 d41d8cd98f00b204e9800998ecf8427e  usr/share/pyshared/LensToggle-0.1.egg-info/requires.txt
 11738318d89d84215acb6c103e8ece45  usr/share/pyshared/LensToggle-0.1.egg-info/top_level.txt
-f29ffde9cdfe04949e63c4025cb5914e  usr/share/pyshared/LensToggle/Toggler.py
-fa2bffd2b8d0a66bda471d7d25bc496b  usr/share/pyshared/LensToggle/__init__.py
+d822491c6737632090fd4dd22861eaad  usr/share/pyshared/LensToggle/__init__.py
+f29ffde9cdfe04949e63c4025cb5914e  usr/share/pyshared/LensToggle/lenstoggle.py
