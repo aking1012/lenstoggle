@@ -1,0 +1,8 @@
+setup.py
+LensToggle/__init__.py
+LensToggle/lenstoggle.py
+LensToggler.egg-info/PKG-INFO
+LensToggler.egg-info/SOURCES.txt
+LensToggler.egg-info/dependency_links.txt
+LensToggler.egg-info/requires.txt
+LensToggler.egg-info/top_level.txt

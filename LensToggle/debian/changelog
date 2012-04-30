@@ -1,5 +1,5 @@
-lenstoggle (0.1-1) unstable; urgency=low
+lenstoggler (0.1.1-1) precise; urgency=low
 
   * source package automatically created by stdeb 0.6.0+git
 
- -- Andrew King (No comment) <aking1012.com@gmail.com>  Mon, 30 Apr 2012 00:16:27 -0400
+ -- Andrew King (No comment) <aking1012.com@gmail.com>  Mon, 30 Apr 2012 04:44:59 -0400

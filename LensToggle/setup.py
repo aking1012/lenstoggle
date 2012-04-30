@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-    name='LensToggle',
-    version='0.1',
+    name='LensToggler',
+    version='0.1.1',
     description='Simple App to Toggle Lenses.',
     author='aking1012.com@gmail.com',
     author_email='aking1012.com@gmail.com',

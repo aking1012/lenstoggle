@@ -49,10 +49,47 @@ class LTWork():
                 except:
                     pass
                 
-class TogglerAbout():
+class TogglerAbout(Gtk.AboutDialog):
     '''
     #TODO
     '''            
+    def __init__(self):
+        license='MIT license + non-commercial clause\n\
+ Copyright (c) 2012 Andrew King\n\
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated\n\
+ documentation files (the "Software"), to deal in the Software without restriction, including without limitation\n\
+ the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and\n\
+ to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\n\
+  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\n\
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\n\
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\
+\n\
+The rights expressed and granted in this license do not apply to commercial software.\n\
+Any rights expressed or implied under no circumstances apply to\n\
+anything resembling a commercial use case.'
+        authors=['Andrew King']
+        documenters=['reading the source']
+        super(TogglerAbout, self).__init__(program_name='LensToggler',
+            version='0.1',
+            copyright=' (C) 2012 Andrew King',
+            license=license,
+            website='http://www.aking1012.com',
+            comments='I thought this should already exist.  It did not so I built it.',
+            authors=authors,
+            documenters=documenters,
+            logo=None,
+            title='About LensToggler')
+        self.connect('response', self.localDestroy)
+    
+    def localDestroy(self, discard, morediscard):
+        '''
+        A crap routine to strip the button feedback
+        '''
+        Gtk.Widget.destroy(self)    
+        
+          
 
 class TogglerButtonBox(Gtk.Box):
     '''
@@ -204,10 +241,12 @@ class TogglerMenu(Gtk.MenuBar):
         help_menu.append(help_about)
 
         self.append(help_menu_name)
-    def about(self):
+    def about(self, drop):
         '''
         TODO
         '''
+        about = TogglerAbout()
+        about.show_all()
 
 
 class TogglerUI(Gtk.Window):
