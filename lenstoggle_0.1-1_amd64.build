@@ -1,4 +1,4 @@
- dpkg-buildpackage -rfakeroot -D -us -uc
+ dpkg-buildpackage -rfakeroot -D -us -uc -b
 dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security
 dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): -D_FORTIFY_SOURCE=2
 dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security
@@ -14,21 +14,10 @@ dh clean --with python2 --buildsystem=python_distutils
    dh_testdir -O--buildsystem=python_distutils
    dh_auto_clean -O--buildsystem=python_distutils
 running clean
-removing 'build/lib.linux-x86_64-2.7' (and everything under it)
+'build/lib.linux-x86_64-2.7' does not exist -- can't clean it
 'build/bdist.linux-x86_64' does not exist -- can't clean it
 'build/scripts-2.7' does not exist -- can't clean it
-removing 'build'
    dh_clean -O--buildsystem=python_distutils
- dpkg-source -b LensToggle
-dpkg-source: info: using source format `3.0 (quilt)'
-dpkg-source: info: building lenstoggle using existing ./lenstoggle_0.1.orig.tar.gz
-dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/top_level.txt
-dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/requires.txt
-dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/PKG-INFO
-dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/dependency_links.txt
-dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/SOURCES.txt
-dpkg-source: info: building lenstoggle in lenstoggle_0.1-1.debian.tar.gz
-dpkg-source: info: building lenstoggle in lenstoggle_0.1-1.dsc
  debian/rules build
 dh build --with python2 --buildsystem=python_distutils
    dh_testdir -O--buildsystem=python_distutils
@@ -111,20 +100,18 @@ dpkg-gencontrol: warning: package python-lenstoggle: unused substitution variabl
    dh_md5sums -O--buildsystem=python_distutils
    dh_builddeb -O--buildsystem=python_distutils
 dpkg-deb: building package `python-lenstoggle' in `../python-lenstoggle_0.1-1_all.deb'.
- dpkg-genchanges  >../lenstoggle_0.1-1_amd64.changes
-dpkg-genchanges: including full source code in upload
+ dpkg-genchanges -b >../lenstoggle_0.1-1_amd64.changes
+dpkg-genchanges: binary-only upload - not including any source code
  dpkg-source --after-build LensToggle
-dpkg-buildpackage: full upload (original source is included)
+dpkg-buildpackage: binary only upload (no source included)
 Now running lintian...
-W: lenstoggle source: no-debian-copyright
-W: lenstoggle source: out-of-date-standards-version 3.9.1 (current is 3.9.3)
 W: python-lenstoggle: new-package-should-close-itp-bug
 E: python-lenstoggle: no-copyright-file
 W: python-lenstoggle: extended-description-line-too-long
+W: python-lenstoggle: binary-without-manpage usr/bin/lenstoggle
+W: python-lenstoggle: su-wrapper-not-su-to-root usr/share/applications/lenstoggle.desktop gksu
 Finished running lintian.
 Now signing changes and any dsc files...
- signfile lenstoggle_0.1-1.dsc Andrew King (No comment) <aking1012.com@gmail.com>
-
  signfile lenstoggle_0.1-1_amd64.changes Andrew King (No comment) <aking1012.com@gmail.com>
 
-Successfully signed dsc and changes files
+Successfully signed changes file

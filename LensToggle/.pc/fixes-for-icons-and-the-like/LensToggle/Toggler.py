@@ -8,8 +8,9 @@ class LTWork():
     '''
     def __init__(self):
         '''
+        Setting up our class variables
         self.lenses is a dictionary of lists of structure:
-        {lensName : BOOL_IS_ENABLED, lensName : BOOL_IS_ENABLED}
+        {lensName : [URL, BOOL_IS_ENABLED], lensName : [URL, BOOL_IS_ENABLED]}
         '''
         self.unitylensroot = '/usr/share/unity/lenses/'
         try:

@@ -3,7 +3,7 @@ Source: lenstoggle
 Version: 0.1-1
 Architecture: all
 Maintainer: Andrew King (No comment) <aking1012.com@gmail.com>
-Installed-Size: 66
+Installed-Size: 91
 Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-pkg-resources
 Section: python
 Priority: optional

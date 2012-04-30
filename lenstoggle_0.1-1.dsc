@@ -12,23 +12,23 @@ Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper 
 Package-List: 
  python-lenstoggle deb python optional
 Checksums-Sha1: 
- 6ba2a427805b9496440e3e523362a5a1615dcdcf 2787 lenstoggle_0.1.orig.tar.gz
- ab14ef1cb5f8bfeb61d563158196a2f00bd0b4f3 1933 lenstoggle_0.1-1.debian.tar.gz
+ 7182b295cd5c154e9c226f880e2b5dcb1baf519b 8200 lenstoggle_0.1.orig.tar.gz
+ eab5a056881693f1daad6283d8f5464db1100983 3777 lenstoggle_0.1-1.debian.tar.gz
 Checksums-Sha256: 
- 77cc16c58e932e4b5e9e05d36f2d31f4adae9b643b69e85e16914869d9dbf411 2787 lenstoggle_0.1.orig.tar.gz
- 118accc8eb219983104cf1aeaa062512322a10f2bd4306bf27186510c3a20f7b 1933 lenstoggle_0.1-1.debian.tar.gz
+ c043602482bbce68d85afc08c52acec3f1f235a54730aad02d2750147827d47b 8200 lenstoggle_0.1.orig.tar.gz
+ 9c1b6e6ff6494f47666f7246208d4d6440be5287815ffe78b99495a19e1eb00b 3777 lenstoggle_0.1-1.debian.tar.gz
 Files: 
- 31ec3eabb8ba170665335a5413d21557 2787 lenstoggle_0.1.orig.tar.gz
- 5b4557b9ef2e654310dec43d230fda2f 1933 lenstoggle_0.1-1.debian.tar.gz
+ bfcd9b48d95f559a24b8d3be1cc4a5b8 8200 lenstoggle_0.1.orig.tar.gz
+ fa51b63ff614daaab7e21081e24d613d 3777 lenstoggle_0.1-1.debian.tar.gz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQEcBAEBAgAGBQJPnDG2AAoJEODCXbnlo0CHZEMH/R1u4Gpu+cJMm960QvdQfImF
-VSDafo3Sedu+ehIYkVsU+g68Yjlg8e1yMTdh28bsHbJ/q7dP+W3xf1Lusziwl+gw
-WfDw5bvGTUJ+PBGLaGH55WILX6RbWGaIde+ydkbMFldDmBCMxrXBY1OSahV8uv92
-aqa28qTLyVQxfxWW7PfgP6FKoYUN5iNbKXfX8nCo+kUi0/en5wt6lF8mRz9xhDte
-rVQg28lNLMsSs+SV7Jd77by4i50Ke2p6NRaC5R0ewet1GGW6AtZT0gR6cmLqfLWJ
-0D9+s8oHcA/hq7UYqj9+l4dggF3vUsxlUWvYgtuwDPmHMyt+qkaoqHc3BnqaQPs=
-=pofG
+iQEcBAEBAgAGBQJPnf9vAAoJEODCXbnlo0CH0b0IANFnjbhFwDXJmsofU3UbnZBa
+wo82SKHPWmqbaJxmtXpErgcpwTeb7e3ZFT9xSlDyRgPONHpoIqX9h5lhdeMKyr5N
+9VIRyW8D32d/pFXjXOf76EBQZ0LelCI56CWdc2AB5sibBYg3Er5s5Z21/Xlc8PFS
+qeqN2oQJYZk/lE2OFSMwFHjOeFiFAtiUO8E2UChi+t644iFcIZoCWN2xKpcF8d8S
+zU8cRoYLiTnw7VYaI8zD8JmdChXwHsyGbOGv1N4hvJ+qU1eWIhsAHu3LdfNg6Vgu
+dUST1NUrh9ymFSeUQnIUL1KsmKACXSGkkXGjYv7UZ6Km5SpC7Vfgw1aZQ5EkHfQ=
+=M2XC
 -----END PGP SIGNATURE-----

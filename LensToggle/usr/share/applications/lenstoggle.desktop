@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=LensToggle
+Comment=Toggle Unity Lenses
+Exec=gksu lenstoggle
+Icon=/usr/share/pixmaps/lenstoggle.png
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Utility;
+

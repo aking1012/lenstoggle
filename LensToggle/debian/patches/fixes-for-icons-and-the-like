@@ -1,0 +1,277 @@
+Description: initial fixes
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ lenstoggle (0.1-1) precise; urgency=low
+ .
+   * source package automatically created by stdeb 0.6.0+git
+Author: Andrew King (No comment) <aking1012.com@gmail.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- /dev/null
++++ lenstoggle-0.1/usr/bin/lenstoggle
+@@ -0,0 +1,3 @@
++#!/bin/sh
++
++/usr/bin/env gksu python /usr/share/pyshared/LensToggle/Toggler.py
+\ No newline at end of file
+--- /dev/null
++++ lenstoggle-0.1/usr/share/pixmaps/lenstoggle.xpm
+@@ -0,0 +1,217 @@
++/* XPM */
++static char * lenstoggle_xpm[] = {
++"72 72 142 2",
++"  	c None",
++". 	c #E4E4E4",
++"+ 	c #E8E8E8",
++"@ 	c #EDEDED",
++"# 	c #ECECEC",
++"$ 	c #E6E6E6",
++"% 	c #E9E9E9",
++"& 	c #D7D7D7",
++"* 	c #EFEFEF",
++"= 	c #EBEBEB",
++"- 	c #EAEAEA",
++"; 	c #E7E7E7",
++"> 	c #EEEEEE",
++", 	c #DBDBDB",
++"' 	c #E3E3E3",
++") 	c #E2E2E2",
++"! 	c #E1E1E1",
++"~ 	c #E5E5E5",
++"{ 	c #F0F0F0",
++"] 	c #BFBFBF",
++"^ 	c #E0E0E0",
++"/ 	c #DFDFDF",
++"( 	c #DDDDDD",
++"_ 	c #BDBDBD",
++": 	c #A1A1A1",
++"< 	c #969696",
++"[ 	c #979797",
++"} 	c #A3A3A3",
++"| 	c #C1C1C1",
++"1 	c #DEDEDE",
++"2 	c #DCDCDC",
++"3 	c #CDCDCD",
++"4 	c #858585",
++"5 	c #000000",
++"6 	c #070707",
++"7 	c #8D8D8D",
++"8 	c #CFCFCF",
++"9 	c #8E8E8E",
++"0 	c #DADADA",
++"a 	c #8A8A8A",
++"b 	c #919191",
++"c 	c #C3C3C3",
++"d 	c #343434",
++"e 	c #353535",
++"f 	c #868686",
++"g 	c #D9D9D9",
++"h 	c #D8D8D8",
++"i 	c #4E4E4E",
++"j 	c #4A4A4A",
++"k 	c #B0B0B0",
++"l 	c #878787",
++"m 	c #7E7E7E",
++"n 	c #D5D5D5",
++"o 	c #D6D6D6",
++"p 	c #D4D4D4",
++"q 	c #7D7D7D",
++"r 	c #686868",
++"s 	c #9E9E9E",
++"t 	c #D3D3D3",
++"u 	c #323232",
++"v 	c #D2D2D2",
++"w 	c #A2A2A2",
++"x 	c #9D9D9D",
++"y 	c #D1D1D1",
++"z 	c #D0D0D0",
++"A 	c #A6A6A6",
++"B 	c #AEAEAE",
++"C 	c #CECECE",
++"D 	c #C2C2C2",
++"E 	c #B4B4B4",
++"F 	c #CCCCCC",
++"G 	c #BABABA",
++"H 	c #BEBEBE",
++"I 	c #CACACA",
++"J 	c #CBCBCB",
++"K 	c #C4C4C4",
++"L 	c #C8C8C8",
++"M 	c #C6C6C6",
++"N 	c #C7C7C7",
++"O 	c #C9C9C9",
++"P 	c #C5C5C5",
++"Q 	c #A7A7A7",
++"R 	c #BCBCBC",
++"S 	c #B9B9B9",
++"T 	c #ABABAB",
++"U 	c #A4A4A4",
++"V 	c #999999",
++"W 	c #ADADAD",
++"X 	c #BBBBBB",
++"Y 	c #A8A8A8",
++"Z 	c #929292",
++"` 	c #B8B8B8",
++" .	c #9F9F9F",
++"..	c #B6B6B6",
++"+.	c #B7B7B7",
++"@.	c #828282",
++"#.	c #B5B5B5",
++"$.	c #939393",
++"%.	c #7F7F7F",
++"&.	c #B3B3B3",
++"*.	c #B1B1B1",
++"=.	c #B2B2B2",
++"-.	c #909090",
++";.	c #AFAFAF",
++">.	c #8F8F8F",
++",.	c #7C7C7C",
++"'.	c #7B7B7B",
++").	c #ACACAC",
++"!.	c #8C8C8C",
++"~.	c #7A7A7A",
++"{.	c #AAAAAA",
++"].	c #8B8B8B",
++"^.	c #A9A9A9",
++"/.	c #797979",
++"(.	c #898989",
++"_.	c #787878",
++":.	c #A5A5A5",
++"<.	c #888888",
++"[.	c #777777",
++"}.	c #767676",
++"|.	c #757575",
++"1.	c #A0A0A0",
++"2.	c #848484",
++"3.	c #747474",
++"4.	c #838383",
++"5.	c #727272",
++"6.	c #9B9B9B",
++"7.	c #818181",
++"8.	c #717171",
++"9.	c #9A9A9A",
++"0.	c #808080",
++"a.	c #666666",
++"b.	c #9C9C9C",
++"c.	c #4D4D4D",
++"d.	c #6D6D6D",
++"e.	c #949494",
++"f.	c #494949",
++"g.	c #535353",
++"h.	c #0D0D0D",
++"i.	c #191919",
++"j.	c #181818",
++"k.	c #141414",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                              . + + @ @ @ # # $ %                                                               ",
++"                                                        & $ * = - % + ; ; + + - = > = ,                                                         ",
++"                                                      # = + $ . ' ) ! ) ) ) ! ) . ~ + - { ]                                                     ",
++"                                                  ) = ; . ! ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ! ' $ - %                                                   ",
++"                                                - + ' ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ) ; -                                                 ",
++"                                              $ $ ) / / / / / / / / / / / / / / / / / / / / ! . -                                               ",
++"                                            / ' / ( ( ( ( ( ( ^ ) _ : < [ } | ' ^ ( ( ( ( ( ( 1 ) ;                                             ",
++"                                          1 ' 1 2 2 2 2 2 1 3 4 5 5 5 5 5 5 5 6 7 8 1 2 2 2 2 2 ( ) !                                           ",
++"                                        9 ~ ( 0 0 0 0 0 , a 5 5                 5 5 b , 0 0 0 0 0 2 ' c                                         ",
++"                                        ' ( 0 0 0 0 0 2 d 5                         5 e 2 0 0 0 0 0 2 '                                         ",
++"                                      f / g h h h h / i                                 j 1 h h h h h 1 k                                       ",
++"                                      ) g & & & & h l                                     m h & & & & g ~                                       ",
++"                                      / n n n n n g 6                                       o n n n n n 2                                       ",
++"                                    [ h p p p p p q                                         r p p p p p & s                                     ",
++"                                    s p t t t t t u                                           v t t t t p w                                     ",
++"                                    x v y y y y z                                             z y y y y y _                                     ",
++"                                    A z z z z z z                                             z z z z z z c                                     ",
++"                                    B 8 C C C 8 8                                             z 8 C C C 8 D                                     ",
++"                                    E 3 3 3 3 3 8                                             8 3 3 3 3 F c                                     ",
++"                                    G F F F F F 3                                             C F F F F F D                                     ",
++"                                    H I I I I I J                                             3 I I I I I K                                     ",
++"                                    | L L L L L J                                             J L L L L L D                                     ",
++"                                    c M N N N M O                                             I N N N N M c                                     ",
++"                                    P D c c c c N                                             P c c c c D |                                     ",
++"                                  s P | | | | | M a Q R           O O O O O L P K K c K | S T M | | | | | M U                                   ",
++"                              V , t P ] ] ] ] ] K t h & & & & & o o o o o o o o o o o o o o t L ] ] ] ] ] P t 0 R                               ",
++"                              p 3 M ] _ _ _ _ _ ] M L L L L L L N M M M M M M P P P P P P P K ] _ _ _ _ _ H P J v W                             ",
++"                            t P H R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R _ D t                             ",
++"                            O X G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G G c Y                           ",
++"                          Z H ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` X  .                          ",
++"                          l G ....................................................................................+.<                           ",
++"                          @.+.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#...$.                          ",
++"                          %...&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.E b                           ",
++"                          %.E *.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.=.-.                          ",
++"                          m &.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.*.>.                          ",
++"                          q =.B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B B ;.9                           ",
++"                          ,.k W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W B 7                           ",
++"                          '.;.).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).).W !.                          ",
++"                          ~.W {.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.T ].                          ",
++"                          ~.T Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y Y ^.a                           ",
++"                          /.{.Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Y (.                          ",
++"                          _.Y :.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.A <.                          ",
++"                          [.Q U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U U :.l                           ",
++"                          }.A w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w } f                           ",
++"                          |.U 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.w 2.                          ",
++"                          |.} 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.: 2.                          ",
++"                          3.: s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s  .4.                          ",
++"                          3.1.x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x s @.                          ",
++"                          5. .6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.x 7.                          ",
++"                          5.s 6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.6.7.                          ",
++"                          8.x 9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.6.0.                          ",
++"                          a.b.V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V '.                          ",
++"                             .[ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ b.c.                          ",
++"                            d.[ < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < ].                            ",
++"                              4.< < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < e.                              ",
++"                                f._.!.7 9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9 7 q g.5                               ",
++"                                    5 5 5 h.i.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.k.5 5 5 5                                   ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                ",
++"                                                                                                                                                "};
+--- /dev/null
++++ lenstoggle-0.1/usr/share/applications/lenstoggle.desktop
+@@ -0,0 +1,9 @@
++[Desktop Entry]
++Name=LensToggle
++Comment=Toggle Unity Lenses
++Exec=gksu lenstoggle
++Icon=/usr/share/pixmaps/lenstoggle.png
++Terminal=false
++Type=Application
++Categories=GNOME;GTK;Utility;
++
+--- lenstoggle-0.1.orig/LensToggle/Toggler.py
++++ lenstoggle-0.1/LensToggle/Toggler.py
+@@ -8,9 +8,8 @@ class LTWork():
+     '''
+     def __init__(self):
+         '''
+-        Setting up our class variables
+         self.lenses is a dictionary of lists of structure:
+-        {lensName : [URL, BOOL_IS_ENABLED], lensName : [URL, BOOL_IS_ENABLED]}
++        {lensName : BOOL_IS_ENABLED, lensName : BOOL_IS_ENABLED}
+         '''
+         self.unitylensroot = '/usr/share/unity/lenses/'
+         try:

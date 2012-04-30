@@ -1,0 +1,43 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S
+dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security
+dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): -D_FORTIFY_SOURCE=2
+dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security
+dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): -Wl,-Bsymbolic-functions -Wl,-z,relro
+dpkg-buildpackage: source package lenstoggle
+dpkg-buildpackage: source version 0.1-1
+dpkg-buildpackage: source changed by Andrew King (No comment) <aking1012.com@gmail.com>
+ dpkg-source --before-build LensToggle
+ fakeroot debian/rules clean
+dh clean --with python2 --buildsystem=python_distutils
+   dh_testdir -O--buildsystem=python_distutils
+   dh_auto_clean -O--buildsystem=python_distutils
+running clean
+'build/lib.linux-x86_64-2.7' does not exist -- can't clean it
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-2.7' does not exist -- can't clean it
+   dh_clean -O--buildsystem=python_distutils
+ dpkg-source -b LensToggle
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building lenstoggle using existing ./lenstoggle_0.1.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/top_level.txt
+dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/requires.txt
+dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/PKG-INFO
+dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/dependency_links.txt
+dpkg-source: warning: ignoring deletion of file LensToggle.egg-info/SOURCES.txt
+dpkg-source: info: building lenstoggle in lenstoggle_0.1-1.debian.tar.gz
+dpkg-source: info: building lenstoggle in lenstoggle_0.1-1.dsc
+ dpkg-genchanges -S >../lenstoggle_0.1-1_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build LensToggle
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+W: lenstoggle source: no-debian-copyright
+W: lenstoggle source: out-of-date-standards-version 3.9.1 (current is 3.9.3)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile lenstoggle_0.1-1.dsc Andrew King (No comment) <aking1012.com@gmail.com>
+
+ signfile lenstoggle_0.1-1_source.changes Andrew King (No comment) <aking1012.com@gmail.com>
+
+Successfully signed dsc and changes files
